@@ -1,0 +1,16 @@
+{
+  "files.exclude": {
+    "node_modules": true
+  },
+  // "git.enabled": false,
+  // "git.decorations.enabled": false,
+  // "scm.diffDecorations": "none",
+}
+
+// "git.enabled": false desativa completamente o Git no VS Code.
+// "git.decorations.enabled": false desativa as decorações do Git, como cores que indicam mudanças nos arquivos.
+// "scm.diffDecorations": "none" desativa as decorações de diferenças nos arquivos controlados pelo Git.
+// "scm.diffDecorationsGutterVisibility": "hidden" esconde as decorações na "gutter" (área próxima aos números das linhas) no editor.
+
+// "git.autofetch": false desativa a busca automática de mudanças no Git.
+// "git.autoRepositoryDetection": false impede o VS Code de detectar 
