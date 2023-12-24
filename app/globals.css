@@ -2,6 +2,32 @@
 @tailwind components;
 @tailwind utilities;
  
+body {
+  -webkit-font-smoothing: antialiased;
+}
+
+/*
+  Adicionar como id no body ou HTML para cancelar o comportamento 
+  de remoção da slide bar quando um elemento do radix é acionado.
+
+  Dessa forma elementos fixos não sofrerão ao radix remover a scollbar pois ele não irar conseguir
+*/
+#overrideStyles.with-scroll-bars-hidden {
+  overflow: auto !important;
+}
+
+#overrideStyles {
+   overflow: auto !important;
+   position: static !important; 
+   padding-left: 0px; 
+   padding-top: 0px;
+   padding-right: 0px;
+   margin-left: 0px; 
+   margin-top: 0px; 
+   margin-right: 0px !important;
+   --removed-body-scroll-bar-size: 0; 
+}
+
 @layer base {
   :root {
     --background: 0 0% 100%;
