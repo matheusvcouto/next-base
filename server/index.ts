@@ -23,7 +23,6 @@ app.get('/', (c) => {
   return c.json('API folder')
 })  
 
-
 app.get('/entry/:id', (c) => {
   const { id } = c.req.param()
   return c.json(id)
